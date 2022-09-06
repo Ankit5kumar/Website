@@ -4,10 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cross-env NODE_ENV=test jest --coverage",
     "start": "node index.js"
   },
-  "keywords": [],
+  "repository": {
+    "tyep":"git",
+    "url": "git:+https://github.com/Ankit5kumar/Website.git"
+  },
+
+  "keywords": [ "nodejs",
+    "express",
+    "sequelize",
+    "mysql",
+    "jest"],
   "author": "",
   "license": "ISC",
   "dependencies": {
