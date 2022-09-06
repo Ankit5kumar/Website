@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "Ecommerce",
-    "host": "127.0.0.1",
+    "username": "ankit_2022",
+    "password": "Ankit5@kumar",
+    "database": "ecommerce_data",
+    "host": "db4free.net",
     "dialect": "mysql"
     
   },
@@ -15,10 +15,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "ankit_2022",
+    "password": "Ankit5@kumar",
+    "database": "ecommerce_data",
+    "host": "db4free.net",
     "dialect": "mysql"
   }
 }
