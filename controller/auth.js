@@ -52,20 +52,21 @@ async function signIn(req,res){
 
 			const authorities = [];
 			const roles = await user.getRoles();
+			res.send(roles)
 			for(let i=0; i<roles.length;i++){
 				authorities.push(roles[i].name)
 			}
 
-			const finalUser = {
-				id: user.id,
-				name: user.name, 
-				email: user.email,
-				username:user.username,
-				token: token,
-				authorities: authorities
-			}
+			// const finalUser = {
+			// 	id: user.id,
+			// 	name: user.name, 
+			// 	email: user.email,
+			// 	username:user.username,
+			// 	token: token,
+			// 	authorities: authorities
+			// }
 
-			res.send(finalUser)
+			res.send(authorities)
 		
 		}else{
 			res.status(400).send({msg : 'Username/password is not correct'})	
